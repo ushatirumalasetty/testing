@@ -1,0 +1,1636 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /><title>Cosmic Ray Report</title></head><body><div class="container"><h1><p class="text-dark">Cosmic Ray Report</p></h1></div><div class="container"><div class="mb-1" id="summary_info___accordion"><div class="card"><a data-toggle="collapse" data-target="#summary_info___collapse_1" aria-expanded="true" aria-controls="summary_info___collapse_1" href="#"><div class="card-header" id="summary_info___heading_1"><button class="btn btn-outline-dark"><h4 class="m-0">Summary info</h4></button></div></a><div aria-labelledby="summary_info___heading_1" data-parent="#summary_info___accordion" class="collapse show" id="summary_info___collapse_1"><div class="card-body"><p>Date time: 16/04/2020 14:42:06</p><p>Total jobs: 40</p><p>Complete: 40 (100.00%)</p><p>Survival rate: 0.00%</p></div></div></div></div><div class="mb-1" id="job_list___accordion"><div class="card"><a data-toggle="collapse" data-target="#job_list___collapse_1" aria-expanded="false" aria-controls="job_list___collapse_1" href="#"><div class="card-header" id="job_list___heading_1"><button class="btn btn-outline-dark"><h4 class="m-0">Job list</h4></button></div></a><div aria-labelledby="job_list___heading_1" data-parent="#job_list___accordion" class="collapse" id="job_list___collapse_1"><div class="card-body"><div class="text-right mb-1"><div class="mx-1" id="job_item_expand_all"><a href="#" onclick="$('div.job_list___sub_multi_collapse').collapse('show');"><button class="btn btn-outline-dark"><span>Expand All</span></button></a></div><div class="mx-1" id="job_item_collapse_all"><a href="#" onclick="$('div.job_list___sub_multi_collapse').collapse('hide');"><button class="btn btn-outline-dark"><span>Collapse All</span></button></a></div></div><div class="mb-1" id="job_list___sub_accordion_1"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_1_1" aria-expanded="false" aria-controls="job_list___sub_collapse_1_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_1_1"><button class="btn btn-outline-success"><span class="job_id">1 : Job ID 5e384689be414094a9e0033a7a4a2ea4</span></button></div></a><div aria-labelledby="job_list___sub_heading_1_1" data-parent="#job_list___sub_accordion_1" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_1_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 21), end pos: (38, 23)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_Eq, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item ==0:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpc5yymmgw/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpc5yymmgw/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_2"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_2_1" aria-expanded="false" aria-controls="job_list___sub_collapse_2_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_2_1"><button class="btn btn-outline-success"><span class="job_id">2 : Job ID 0aa7acbbbaef44c782f12336fe9ee09b</span></button></div></a><div aria-labelledby="job_list___sub_heading_2_1" data-parent="#job_list___sub_accordion_2" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_2_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 30), end pos: (54, 32)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_Eq, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed ==0:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp5mju1pui/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp5mju1pui/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_3"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_3_1" aria-expanded="false" aria-controls="job_list___sub_collapse_3_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_3_1"><button class="btn btn-outline-success"><span class="job_id">3 : Job ID 2fe6615c529044c39ac2305637787749</span></button></div></a><div aria-labelledby="job_list___sub_heading_3_1" data-parent="#job_list___sub_accordion_3" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_3_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 21), end pos: (38, 23)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_NotEq, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item !=0:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpc5yymmgw/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpc5yymmgw/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_4"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_4_1" aria-expanded="false" aria-controls="job_list___sub_collapse_4_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_4_1"><button class="btn btn-outline-success"><span class="job_id">4 : Job ID 192d33248ee943de8eed9076a7e45703</span></button></div></a><div aria-labelledby="job_list___sub_heading_4_1" data-parent="#job_list___sub_accordion_4" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_4_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 30), end pos: (54, 32)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_NotEq, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed !=0:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp52r0up2c/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp52r0up2c/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_5"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_5_1" aria-expanded="false" aria-controls="job_list___sub_collapse_5_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_5_1"><button class="btn btn-outline-success"><span class="job_id">5 : Job ID 2da740a9f747408aba57470d31861644</span></button></div></a><div aria-labelledby="job_list___sub_heading_5_1" data-parent="#job_list___sub_accordion_5" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_5_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 21), end pos: (38, 23)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_Lt, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item &lt;0:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7_rospw6/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7_rospw6/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_6"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_6_1" aria-expanded="false" aria-controls="job_list___sub_collapse_6_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_6_1"><button class="btn btn-outline-success"><span class="job_id">6 : Job ID 03ba99c37f0e4cb9a406cbc72ea354a1</span></button></div></a><div aria-labelledby="job_list___sub_heading_6_1" data-parent="#job_list___sub_accordion_6" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_6_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 30), end pos: (54, 32)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_Lt, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed &lt;0:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmph6djythx/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmph6djythx/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_7"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_7_1" aria-expanded="false" aria-controls="job_list___sub_collapse_7_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_7_1"><button class="btn btn-outline-success"><span class="job_id">7 : Job ID 69b9824c81784861859faadb6d882a4a</span></button></div></a><div aria-labelledby="job_list___sub_heading_7_1" data-parent="#job_list___sub_accordion_7" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_7_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 21), end pos: (38, 23)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_Gt, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item &gt;0:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpatl4yjdq/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpatl4yjdq/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_8"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_8_1" aria-expanded="false" aria-controls="job_list___sub_collapse_8_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_8_1"><button class="btn btn-outline-success"><span class="job_id">8 : Job ID 675806c1c86947dc836ed41674528cc6</span></button></div></a><div aria-labelledby="job_list___sub_heading_8_1" data-parent="#job_list___sub_accordion_8" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_8_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 30), end pos: (54, 32)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_Gt, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed &gt;0:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7_rospw6/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7_rospw6/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_9"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_9_1" aria-expanded="false" aria-controls="job_list___sub_collapse_9_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_9_1"><button class="btn btn-outline-success"><span class="job_id">9 : Job ID e53b7fd60bac49c0b66c7df8fa1211b7</span></button></div></a><div aria-labelledby="job_list___sub_heading_9_1" data-parent="#job_list___sub_accordion_9" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_9_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 21), end pos: (38, 23)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_GtE, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item &gt;=0:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7_rospw6/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7_rospw6/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_10"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_10_1" aria-expanded="false" aria-controls="job_list___sub_collapse_10_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_10_1"><button class="btn btn-outline-success"><span class="job_id">10 : Job ID 88d31c2b8a8944cc8b0280a323e594f6</span></button></div></a><div aria-labelledby="job_list___sub_heading_10_1" data-parent="#job_list___sub_accordion_10" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_10_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 30), end pos: (54, 32)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_LtE_GtE, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed &gt;=0:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp52r0up2c/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp52r0up2c/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.29s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_11"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_11_1" aria-expanded="false" aria-controls="job_list___sub_collapse_11_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_11_1"><button class="btn btn-outline-success"><span class="job_id">11 : Job ID e34040de0ffa49e4b48e917ee8c88eb1</span></button></div></a><div aria-labelledby="job_list___sub_heading_11_1" data-parent="#job_list___sub_accordion_11" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_11_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_Eq, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed ==self._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp52r0up2c/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp52r0up2c/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_12"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_12_1" aria-expanded="false" aria-controls="job_list___sub_collapse_12_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_12_1"><button class="btn btn-outline-success"><span class="job_id">12 : Job ID fd502a81db4a42acb064cabdb2b2cf34</span></button></div></a><div aria-labelledby="job_list___sub_heading_12_1" data-parent="#job_list___sub_accordion_12" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_12_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_NotEq, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed !=self._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpkz5e2_ls/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpkz5e2_ls/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.15s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_13"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_13_1" aria-expanded="false" aria-controls="job_list___sub_collapse_13_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_13_1"><button class="btn btn-outline-success"><span class="job_id">13 : Job ID 7f00baf6faa043c495acc72cd50304e7</span></button></div></a><div aria-labelledby="job_list___sub_heading_13_1" data-parent="#job_list___sub_accordion_13" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_13_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_Lt, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed &lt;self._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7w0f5yt7/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7w0f5yt7/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_14"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_14_1" aria-expanded="false" aria-controls="job_list___sub_collapse_14_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_14_1"><button class="btn btn-outline-success"><span class="job_id">14 : Job ID f56d1218dfb74c88951f2156620dd1c8</span></button></div></a><div aria-labelledby="job_list___sub_heading_14_1" data-parent="#job_list___sub_accordion_14" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_14_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_LtE, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed &lt;=self._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7_rospw6/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7_rospw6/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_15"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_15_1" aria-expanded="false" aria-controls="job_list___sub_collapse_15_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_15_1"><button class="btn btn-outline-success"><span class="job_id">15 : Job ID f60e21fffa014e68bdc3343f6c098c49</span></button></div></a><div aria-labelledby="job_list___sub_heading_15_1" data-parent="#job_list___sub_accordion_15" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_15_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_Gt, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed &gt;self._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpkz5e2_ls/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpkz5e2_ls/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.29s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_16"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_16_1" aria-expanded="false" aria-controls="job_list___sub_collapse_16_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_16_1"><button class="btn btn-outline-success"><span class="job_id">16 : Job ID d4559cafed8a4fde917bd371786b157b</span></button></div></a><div aria-labelledby="job_list___sub_heading_16_1" data-parent="#job_list___sub_accordion_16" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_16_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_Is, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed isself._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7_rospw6/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7_rospw6/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_17"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_17_1" aria-expanded="false" aria-controls="job_list___sub_collapse_17_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_17_1"><button class="btn btn-outline-success"><span class="job_id">17 : Job ID 1ef014169f0846f0918df78b92f26cff</span></button></div></a><div aria-labelledby="job_list___sub_heading_17_1" data-parent="#job_list___sub_accordion_17" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_17_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 34), end pos: (47, 36)</button></a></pre><pre>operator: core/ReplaceComparisonOperator_GtE_IsNot, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if self._current_speed is notself._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmph6djythx/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmph6djythx/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.34s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_18"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_18_1" aria-expanded="false" aria-controls="job_list___sub_collapse_18_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_18_1"><button class="btn btn-outline-success"><span class="job_id">18 : Job ID 621ac14daa7a440aa4bb3d7d898f811a</span></button></div></a><div aria-labelledby="job_list___sub_heading_18_1" data-parent="#job_list___sub_accordion_18" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_18_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 11), end pos: (38, 24)</button></a></pre><pre>operator: core/AddNot, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if not check_item&lt;=0:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpatl4yjdq/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpatl4yjdq/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_19"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_19_1" aria-expanded="false" aria-controls="job_list___sub_collapse_19_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_19_1"><button class="btn btn-outline-success"><span class="job_id">19 : Job ID b734a791ae4d4b99b0a7f0db81d833d3</span></button></div></a><div aria-labelledby="job_list___sub_heading_19_1" data-parent="#job_list___sub_accordion_19" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_19_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=45" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (45, 11), end pos: (45, 34)</button></a></pre><pre>operator: core/AddNot, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -42,7 +42,7 @@
+         self._is_engine_started=True
+ 
+     def accelerate(self):
+-        if self._is_engine_started:
++        if not self._is_engine_started:
+             self._current_speed+=self._acceleration
+             if self._current_speed&gt;=self._max_speed:
+                 self._current_speed=self._max_speed</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmph6djythx/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmph6djythx/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_20"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_20_1" aria-expanded="false" aria-controls="job_list___sub_collapse_20_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_20_1"><button class="btn btn-outline-success"><span class="job_id">20 : Job ID e697d4c0236a4c79b7c3e29ae02568a8</span></button></div></a><div aria-labelledby="job_list___sub_heading_20_1" data-parent="#job_list___sub_accordion_20" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_20_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=47" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (47, 15), end pos: (47, 51)</button></a></pre><pre>operator: core/AddNot, occurrence: 2</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -44,7 +44,7 @@
+     def accelerate(self):
+         if self._is_engine_started:
+             self._current_speed+=self._acceleration
+-            if self._current_speed&gt;=self._max_speed:
++            if not self._current_speed&gt;=self._max_speed:
+                 self._current_speed=self._max_speed
+         else:
+             print("Start the engine to accelerate")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp52r0up2c/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp52r0up2c/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_21"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_21_1" aria-expanded="false" aria-controls="job_list___sub_collapse_21_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_21_1"><button class="btn btn-outline-success"><span class="job_id">21 : Job ID 1d4e044d38834abbb617fe71ce2b0dd7</span></button></div></a><div aria-labelledby="job_list___sub_heading_21_1" data-parent="#job_list___sub_accordion_21" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_21_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 11), end pos: (54, 33)</button></a></pre><pre>operator: core/AddNot, occurrence: 3</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if not self._current_speed&lt;=0:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpc5yymmgw/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpc5yymmgw/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_22"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_22_1" aria-expanded="false" aria-controls="job_list___sub_collapse_22_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_22_1"><button class="btn btn-outline-success"><span class="job_id">22 : Job ID 1fe8893418594db0b932a6db0a634723</span></button></div></a><div aria-labelledby="job_list___sub_heading_22_1" data-parent="#job_list___sub_accordion_22" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_22_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=58" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (58, 11), end pos: (58, 34)</button></a></pre><pre>operator: core/AddNot, occurrence: 4</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -55,7 +55,7 @@
+             self._current_speed=0
+ 
+     def sound_horn(self):
+-        if self._is_engine_started:
++        if not self._is_engine_started:
+             print(self.HORN)
+         else:
+             print("Start the engine to sound_horn")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpc5yymmgw/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpc5yymmgw/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_23"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_23_1" aria-expanded="false" aria-controls="job_list___sub_collapse_23_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_23_1"><button class="btn btn-outline-success"><span class="job_id">23 : Job ID 7783ae66d21f4f6e90b2e79bb9058f08</span></button></div></a><div aria-labelledby="job_list___sub_heading_23_1" data-parent="#job_list___sub_accordion_23" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_23_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=42" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (42, 32), end pos: (42, 36)</button></a></pre><pre>operator: core/ReplaceTrueWithFalse, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -39,7 +39,7 @@
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):
+-        self._is_engine_started=True
++        self._is_engine_started=False
+ 
+     def accelerate(self):
+         if self._is_engine_started:</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp52r0up2c/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp52r0up2c/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_24"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_24_1" aria-expanded="false" aria-controls="job_list___sub_collapse_24_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_24_1"><button class="btn btn-outline-success"><span class="job_id">24 : Job ID cdf1c772abc74d30a26a8eaa3af47232</span></button></div></a><div aria-labelledby="job_list___sub_heading_24_1" data-parent="#job_list___sub_accordion_24" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_24_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=13" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (13, 32), end pos: (13, 37)</button></a></pre><pre>operator: core/ReplaceFalseWithTrue, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -10,7 +10,7 @@
+         self._acceleration=acceleration
+         self._tyre_friction=tyre_friction
+         self._color=color
+-        self._is_engine_started=False
++        self._is_engine_started=True
+         self._current_speed=0
+ 
+     @property</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpkz5e2_ls/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpkz5e2_ls/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_25"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_25_1" aria-expanded="false" aria-controls="job_list___sub_collapse_25_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_25_1"><button class="btn btn-outline-success"><span class="job_id">25 : Job ID 8230c2a5a54346dcab8ddb5f41da7585</span></button></div></a><div aria-labelledby="job_list___sub_heading_25_1" data-parent="#job_list___sub_accordion_25" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_25_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=64" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (64, 36), end pos: (64, 41)</button></a></pre><pre>operator: core/ReplaceFalseWithTrue, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -61,6 +61,6 @@
+             print("Start the engine to sound_horn")
+ 
+     def stop_engine(self):
+-            self._is_engine_started=False
++            self._is_engine_started=True
+ 
+ </pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpkz5e2_ls/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpkz5e2_ls/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_26"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_26_1" aria-expanded="false" aria-controls="job_list___sub_collapse_26_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_26_1"><button class="btn btn-outline-success"><span class="job_id">26 : Job ID 903f7c883ae0424bb691a88166e43b56</span></button></div></a><div aria-labelledby="job_list___sub_heading_26_1" data-parent="#job_list___sub_accordion_26" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_26_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=14" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (14, 28), end pos: (14, 29)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -11,7 +11,7 @@
+         self._tyre_friction=tyre_friction
+         self._color=color
+         self._is_engine_started=False
+-        self._current_speed=0
++        self._current_speed= 1
+ 
+     @property
+     def max_speed(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmph6djythx/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmph6djythx/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_27"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_27_1" aria-expanded="false" aria-controls="job_list___sub_collapse_27_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_27_1"><button class="btn btn-outline-success"><span class="job_id">27 : Job ID 578e2fc71843421fa972094dd523c9d8</span></button></div></a><div aria-labelledby="job_list___sub_heading_27_1" data-parent="#job_list___sub_accordion_27" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_27_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=14" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (14, 28), end pos: (14, 29)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -11,7 +11,7 @@
+         self._tyre_friction=tyre_friction
+         self._color=color
+         self._is_engine_started=False
+-        self._current_speed=0
++        self._current_speed= -1
+ 
+     @property
+     def max_speed(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7w0f5yt7/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7w0f5yt7/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_28"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_28_1" aria-expanded="false" aria-controls="job_list___sub_collapse_28_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_28_1"><button class="btn btn-outline-success"><span class="job_id">28 : Job ID 09364ada4ef24b8dbc157941845ee012</span></button></div></a><div aria-labelledby="job_list___sub_heading_28_1" data-parent="#job_list___sub_accordion_28" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_28_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 23), end pos: (38, 24)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 2</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item&lt;= 1:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp5mju1pui/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp5mju1pui/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_29"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_29_1" aria-expanded="false" aria-controls="job_list___sub_collapse_29_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_29_1"><button class="btn btn-outline-success"><span class="job_id">29 : Job ID d39fa7c6fdb64700bf012e3d9282248f</span></button></div></a><div aria-labelledby="job_list___sub_heading_29_1" data-parent="#job_list___sub_accordion_29" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_29_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=38" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (38, 23), end pos: (38, 24)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 3</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -35,7 +35,7 @@
+ 
+     @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+-        if check_item&lt;=0:
++        if check_item&lt;= -1:
+             raise ValueError(f"Invalid value for {check_item_name}")
+ 
+     def start_engine(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp5mju1pui/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp5mju1pui/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_30"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_30_1" aria-expanded="false" aria-controls="job_list___sub_collapse_30_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_30_1"><button class="btn btn-outline-success"><span class="job_id">30 : Job ID d57739026e4a429594d1f1dfb3fabef6</span></button></div></a><div aria-labelledby="job_list___sub_heading_30_1" data-parent="#job_list___sub_accordion_30" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_30_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 32), end pos: (54, 33)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 4</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed&lt;= 1:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp5mju1pui/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp5mju1pui/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_31"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_31_1" aria-expanded="false" aria-controls="job_list___sub_collapse_31_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_31_1"><button class="btn btn-outline-success"><span class="job_id">31 : Job ID 101c7122d7874415b822f29be6ee6ea4</span></button></div></a><div aria-labelledby="job_list___sub_heading_31_1" data-parent="#job_list___sub_accordion_31" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_31_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=54" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (54, 32), end pos: (54, 33)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 5</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -51,7 +51,7 @@
+ 
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+-        if self._current_speed&lt;=0:
++        if self._current_speed&lt;= -1:
+             self._current_speed=0
+ 
+     def sound_horn(self):</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7w0f5yt7/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7w0f5yt7/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_32"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_32_1" aria-expanded="false" aria-controls="job_list___sub_collapse_32_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_32_1"><button class="btn btn-outline-success"><span class="job_id">32 : Job ID 79efaffee7d945ee847ddcc7476cf544</span></button></div></a><div aria-labelledby="job_list___sub_heading_32_1" data-parent="#job_list___sub_accordion_32" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_32_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=55" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (55, 32), end pos: (55, 33)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 6</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -52,7 +52,7 @@
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+         if self._current_speed&lt;=0:
+-            self._current_speed=0
++            self._current_speed= 1
+ 
+     def sound_horn(self):
+         if self._is_engine_started:</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmph6djythx/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmph6djythx/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_33"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_33_1" aria-expanded="false" aria-controls="job_list___sub_collapse_33_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_33_1"><button class="btn btn-outline-success"><span class="job_id">33 : Job ID 9f1cad1f9b47456dbf7e344be43c7bb5</span></button></div></a><div aria-labelledby="job_list___sub_heading_33_1" data-parent="#job_list___sub_accordion_33" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_33_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=55" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (55, 32), end pos: (55, 33)</button></a></pre><pre>operator: core/NumberReplacer, occurrence: 7</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -52,7 +52,7 @@
+     def apply_brakes(self):
+         self._current_speed-=self._tyre_friction
+         if self._current_speed&lt;=0:
+-            self._current_speed=0
++            self._current_speed= -1
+ 
+     def sound_horn(self):
+         if self._is_engine_started:</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpatl4yjdq/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpatl4yjdq/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.27s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_34"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_34_1" aria-expanded="false" aria-controls="job_list___sub_collapse_34_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_34_1"><button class="btn btn-outline-success"><span class="job_id">34 : Job ID 468b12e4706248cb90839f77caf387ce</span></button></div></a><div aria-labelledby="job_list___sub_heading_34_1" data-parent="#job_list___sub_accordion_34" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_34_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=16" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (16, 4), end pos: (17, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -12,8 +12,6 @@
+         self._color=color
+         self._is_engine_started=False
+         self._current_speed=0
+-
+-    @property
+     def max_speed(self):
+         return self._max_speed
+     @property</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpkz5e2_ls/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpkz5e2_ls/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_35"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_35_1" aria-expanded="false" aria-controls="job_list___sub_collapse_35_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_35_1"><button class="btn btn-outline-success"><span class="job_id">35 : Job ID afa757e916204ff8a30f9eef3a70a3de</span></button></div></a><div aria-labelledby="job_list___sub_heading_35_1" data-parent="#job_list___sub_accordion_35" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_35_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=19" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (19, 4), end pos: (20, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 1</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -16,7 +16,6 @@
+     @property
+     def max_speed(self):
+         return self._max_speed
+-    @property
+     def acceleration(self):
+         return self._acceleration
+     @property</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7w0f5yt7/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7w0f5yt7/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_36"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_36_1" aria-expanded="false" aria-controls="job_list___sub_collapse_36_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_36_1"><button class="btn btn-outline-success"><span class="job_id">36 : Job ID b841aa53e28647e2a0252dce184a475b</span></button></div></a><div aria-labelledby="job_list___sub_heading_36_1" data-parent="#job_list___sub_accordion_36" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_36_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=22" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (22, 4), end pos: (23, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 2</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -19,7 +19,6 @@
+     @property
+     def acceleration(self):
+         return self._acceleration
+-    @property
+     def tyre_friction(self):
+         return self._tyre_friction
+     @property</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp5mju1pui/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp5mju1pui/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.28s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_37"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_37_1" aria-expanded="false" aria-controls="job_list___sub_collapse_37_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_37_1"><button class="btn btn-outline-success"><span class="job_id">37 : Job ID 1848816660994bd68b878ccd53f32547</span></button></div></a><div aria-labelledby="job_list___sub_heading_37_1" data-parent="#job_list___sub_accordion_37" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_37_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=25" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (25, 4), end pos: (26, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 3</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -22,7 +22,6 @@
+     @property
+     def tyre_friction(self):
+         return self._tyre_friction
+-    @property
+     def color(self):
+         return self._color
+     @property</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmp7w0f5yt7/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmp7w0f5yt7/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_38"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_38_1" aria-expanded="false" aria-controls="job_list___sub_collapse_38_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_38_1"><button class="btn btn-outline-success"><span class="job_id">38 : Job ID 1529a17857644fd1907512a53108b0d7</span></button></div></a><div aria-labelledby="job_list___sub_heading_38_1" data-parent="#job_list___sub_accordion_38" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_38_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=28" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (28, 4), end pos: (29, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 4</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -25,7 +25,6 @@
+     @property
+     def color(self):
+         return self._color
+-    @property
+     def is_engine_started(self):
+         return self._is_engine_started
+     @property</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpatl4yjdq/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpatl4yjdq/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.16s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_39"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_39_1" aria-expanded="false" aria-controls="job_list___sub_collapse_39_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_39_1"><button class="btn btn-outline-success"><span class="job_id">39 : Job ID c9bf0aca6d60447c9022d10e6482c0c8</span></button></div></a><div aria-labelledby="job_list___sub_heading_39_1" data-parent="#job_list___sub_accordion_39" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_39_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=31" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (31, 4), end pos: (32, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 5</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -28,7 +28,6 @@
+     @property
+     def is_engine_started(self):
+         return self._is_engine_started
+-    @property
+     def current_speed(self):
+         return self._current_speed
+ </pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpc5yymmgw/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpc5yymmgw/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_40"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_40_1" aria-expanded="false" aria-controls="job_list___sub_collapse_40_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_40_1"><button class="btn btn-outline-success"><span class="job_id">40 : Job ID 602d2767b342450b9600430175e29ff9</span></button></div></a><div aria-labelledby="job_list___sub_heading_40_1" data-parent="#job_list___sub_accordion_40" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_40_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=car.py&amp;line=36" class="text-secondary"><button class="btn btn-outline-dark">car.py, start pos: (36, 4), end pos: (37, 0)</button></a></pre><pre>operator: core/RemoveDecorator, occurrence: 6</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- acar.py
++++ bcar.py
+@@ -31,9 +31,6 @@
+     @property
+     def current_speed(self):
+         return self._current_speed
+-
+-
+-    @ staticmethod
+     def check_is_positive(check_item,check_item_name):
+         if check_item&lt;=0:
+             raise ValueError(f"Invalid value for {check_item_name}")</pre></div><div class="alert alert-secondary"><pre class="diff">============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /tmp/tmpatl4yjdq/repo, inifile: pytest.ini
+plugins: django-3.8.0, timeout-1.3.4, parallel-0.0.10, cov-2.8.1, pythonpath-0.7.3
+collected 27 items / 1 error / 27 deselected
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting tests_car.py _________________________
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/ubuntu/.venv/lib/python3.6/site-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:665: in _load_unlocked
+    ???
+/home/ubuntu/.venv/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+/home/ubuntu/assignment_submissions/testing/testing_assignment_001/562aacca89f247f28fadebd58a8e27ce/testing_assignment_001/tests_car.py:2: in &lt;module&gt;
+    from car import Car
+E     File "/tmp/tmpatl4yjdq/repo/car.py", line 1
+E       import math
+E       ^
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR tests_car.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 27 deselected, 1 error in 0.26s ========================
+</pre></div></div></div></div></div></div></div></div></div></div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script type="text/javascript">$('div.job_list___sub_multi_collapse').on('shown.bs.collapse',  function () {    correct_behavior_functional_buttons();  });$('div.job_list___sub_multi_collapse').on('hidden.bs.collapse',  function () {    correct_behavior_functional_buttons();  });function correct_behavior_functional_buttons() {    var expand = false;    var collapse = false;    $('a.job_list___sub_multi_heading').each(function(index) {      if ($(this).attr('aria-expanded') == 'false') {        expand = true;        return false;      };    });    $('a.job_list___sub_multi_heading').each(function(index) {      if ($(this).attr('aria-expanded') == 'true') {        collapse = true;        return false;      };    });    if (expand) {      $('div#job_item_expand_all').css('display', 'inline-block');    } else {      $('div#job_item_expand_all').css('display', 'none');    };    if (collapse) {      $('div#job_item_collapse_all').css('display', 'inline-block');    } else {      $('div#job_item_collapse_all').css('display', 'none');    };  };correct_behavior_functional_buttons();</script></body></html>
